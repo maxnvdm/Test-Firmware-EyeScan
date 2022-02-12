@@ -1,15 +1,15 @@
 ﻿The information below describes the operation of and interaction with the newly developed eye scan firmware. This firmware has been integrated into the EoS testbench firmware developed by DESY for operation on a Kintex 7 FPGA.
 
 The modules I developed and added to this project are:
-* [eyeScan.v](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/firmware%20code/eyeScan.v) - the primary module responsible for interacting the GTX transceiver and performing the eye scan.
-* [eyeScan_tb.vhd](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/sim_2/new/eyeScan_tb.vhd) - the testbench used to simulate the eye scan process and verify various operations are working correctly.
+* [eyeScan.v](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/firmware%20code/eyeScan.v) - the primary module responsible for interacting the GTX transceiver and performing the eye scan.
+* [eyeScan_tb.vhd](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/sim_2/new/eyeScan_tb.vhd) - the testbench used to simulate the eye scan process and verify various operations are working correctly.
 
 The modules I contributed to or modified to support the eye scan functionality:
-* [GetEyeScanData.vhd](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/firmware%20code/GetEyeScanData.vhd) - the module responsible for transfering the eye scan data out of the FPGA over UART to the control PC.
-* [EyeScanStatus.vhd](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/firmware%20code/EyeScanStatus.vhd) - the module responsible for interacting with the eye scan firmware, used for monitoring and control.
-* [GTX_RxTx_dual.vhd](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/firmware%20code/GTX_RxTx_dual.vhd) - the module responsible for instantiating the GTX and eye scan firmware.
-* [LPGBT_BERTest_KC705.vhd](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/firmware%20code/LPGBT_BERTest_KC705.vhd) - the top-level module responsible for instantiating all other firmware and setting up the interconnections between modules. 
-* [LPGBT_BERTest_KC705.xdc](https://github.com/maxnvdm/Test-Firmware-EyeScan/blob/main/constrs_1/LPGBT_BERTest_KC705.xdc) - the constraints file where various properties are set to enable the eye scan functionality.
+* [GetEyeScanData.vhd](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/firmware%20code/GetEyeScanData.vhd) - the module responsible for transfering the eye scan data out of the FPGA over UART to the control PC.
+* [EyeScanStatus.vhd](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/firmware%20code/EyeScanStatus.vhd) - the module responsible for interacting with the eye scan firmware, used for monitoring and control.
+* [GTX_RxTx_dual.vhd](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/firmware%20code/GTX_RxTx_dual.vhd) - the module responsible for instantiating the GTX and eye scan firmware.
+* [LPGBT_BERTest_KC705.vhd](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/firmware%20code/LPGBT_BERTest_KC705.vhd) - the top-level module responsible for instantiating all other firmware and setting up the interconnections between modules. 
+* [LPGBT_BERTest_KC705.xdc](https://gitfront.io/r/user-6751004/1d277caa20836c40b5fe4b1442b3af027a15e8d9/Test-Firmware-EyeScan/blob/constrs_1/LPGBT_BERTest_KC705.xdc) - the constraints file where various properties are set to enable the eye scan functionality.
 
 ## Documentation of the Eye Scan Module
 V1, 20 May 2021
